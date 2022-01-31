@@ -20,6 +20,7 @@
         ],
         "fileFilters": [
           "./public/mockServiceWorker.js"
-        ]
+        ],
+        "executionMode": "update"
     }
   }
