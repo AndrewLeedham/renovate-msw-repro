@@ -14,13 +14,17 @@
       ":semanticCommitsDisabled",
       "workarounds:all"
     ],
-    "postUpgradeTasks": {
-        "commands": [
-          "pwd"
-        ],
-        "fileFilters": [
-          "public/mockServiceWorker.js"
-        ],
-        "executionMode": "update"
-    }
-  }
+    "packageRules": [
+        {
+            "matchPackageNames": "msw",
+            "postUpgradeTasks": {
+                "commands": [
+                  "pwd"
+                ],
+                "fileFilters": [
+                  "public/mockServiceWorker.js"
+                ]
+            }
+        }
+    ]
+}
