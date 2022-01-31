@@ -19,7 +19,7 @@
           "pwd"
         ],
         "fileFilters": [
-          "./public/mockServiceWorker.js"
+          "public/mockServiceWorker.js"
         ],
         "executionMode": "update"
     }
