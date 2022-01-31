@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/AndrewLeedham/renovate-msw-repro#readme",
   "dependencies": {
-    "msw": "^0.36.4"
+    "msw": "0.36.4"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }

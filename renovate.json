@@ -2,19 +2,31 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "dependencyDashboard": true,
     "timezone": "Europe/London",
+    "extends": [
+      ":ignoreModulesAndTests",
+      ":autodetectPinVersions",
+      "group:allNonMajor",
+      "group:monorepos",
+      "group:recommended",
+      "group:definitelyTyped",
+      ":prHourlyLimit2",
+      ":prConcurrentLimit20",
+      ":semanticCommitsDisabled",
+      "workarounds:all"
+    ],
     "packageRules": [
-        {
-            "matchPackageNames": [
-                "msw"
-            ],
-            "postUpgradeTasks": {
-                "commands": [
-                    "pwd"
-                ],
-                "fileFilters": [
-                    "./tools/storybook/static/mockServiceWorker.js"
-                ]
-            }
+      {
+        "matchPackageNames": [
+          "msw"
+        ],
+        "postUpgradeTasks": {
+          "commands": [
+            "pwd"
+          ],
+          "fileFilters": [
+            "./tools/storybook/static/mockServiceWorker.js"
+          ]
         }
+      }
     ]
-}
+  }
