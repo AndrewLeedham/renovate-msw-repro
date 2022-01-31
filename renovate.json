@@ -1,0 +1,20 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "dependencyDashboard": true,
+    "timezone": "Europe/London",
+    "packageRules": [
+        {
+            "matchPackageNames": [
+                "msw"
+            ],
+            "postUpgradeTasks": {
+                "commands": [
+                    "pwd"
+                ],
+                "fileFilters": [
+                    "./tools/storybook/static/mockServiceWorker.js"
+                ]
+            }
+        }
+    ]
+}
