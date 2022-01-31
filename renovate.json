@@ -24,7 +24,7 @@
             "pwd"
           ],
           "fileFilters": [
-            "./tools/storybook/static/mockServiceWorker.js"
+            "./public/mockServiceWorker.js"
           ]
         }
       }
